@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DFA Pøp Jhay | Official Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #080808;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+            background:
+                radial-gradient(circle at center, #1c1c1c 0%, #080808 55%);
+        }
+
+        .logo {
+            font-size: 16px;
+            letter-spacing: 7px;
+            color: #999;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(45px, 13vw, 95px);
+            line-height: 1;
+            letter-spacing: -3px;
+            margin-bottom: 22px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            letter-spacing: 4px;
+            color: #ddd;
+            margin-bottom: 12px;
+        }
+
+        .genre {
+            color: #888;
+            font-size: 14px;
+            max-width: 600px;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .button {
+            text-decoration: none;
+            color: white;
+            border: 1px solid #555;
+            padding: 12px 24px;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: white;
+            color: black;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .line {
+            width: 55px;
+            height: 3px;
+            background: white;
+            margin-bottom: 28px;
+        }
+
+        .about {
+            color: #bbb;
+            font-size: 17px;
+            max-width: 720px;
+        }
+
+        .music-box {
+            border: 1px solid #292929;
+            padding: 30px;
+            border-radius: 16px;
+            background: #101010;
+        }
+
+        .music-box h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .music-box p {
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 8px 15px;
+            border: 1px solid #444;
+            border-radius: 20px;
+            color: #ccc;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+
+        .socials {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .socials a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid #333;
+            padding: 16px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .socials a:hover {
+            background: white;
+            color: black;
+        }
+
+        .private-note {
+            margin-top: 22px;
+            color: #666;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 45px 20px;
+            border-top: 1px solid #222;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .signature {
+            color: #aaa;
+            margin-top: 8px;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 600px) {
+            .socials {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header>
+
+        <div class="logo">DFA</div>
+
+        <h1>DFA Pøp Jhay</h1>
+
+        <p class="tagline">DON'T FADE AWAY.</p>
+
+        <p class="genre">
+            Ghanaian Rapper • Singer • Ghana Drill • Hip-Hop • Melodic Rap
+        </p>
+
+        <div class="buttons">
+            <a href="#music" class="button">Music</a>
+            <a href="#about" class="button">About Me</a>
+            <a href="#connect" class="button">Connect</a>
+        </div>
+
+    </header>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h2>About DFA</h2>
+
+        <div class="line"></div>
+
+        <p class="about">
+            DFA Pøp Jhay is a Ghanaian rapper and singer building his own
+            sound through Ghana drill, hip-hop and melodic rap.
+
+            With ambition, emotion and street energy at the heart of the
+            music, DFA represents one message above everything:
+
+            Don't Fade Away.
+        </p>
+
+    </section>
+
+
+    <!-- MUSIC -->
+    <section id="music">
+
+        <h2>Music</h2>
+
+        <div class="line"></div>
+
+        <div class="music-box">
+
+            <h3>New Music Coming Soon</h3>
+
+            <p>
+                The journey is only beginning. New music from
+                DFA Pøp Jhay is on the way.
+            </p>
+
+            <span class="status">COMING SOON</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- SOCIALS -->
+    <section id="connect">
+
+        <h2>Connect</h2>
+
+        <div class="line"></div>
+
+        <div class="socials">
+
+            <a
+                href="https://www.instagram.com/pop_jhay_28?utm_source=qr&stkn=OTRwOGx5dDV0ajUx"
+                target="_blank">
+                Instagram
+            </a>
+
+            <a
+                href="https://www.facebook.com/share/1DgayarGCw/"
+                target="_blank">
+                Facebook
+            </a>
+
+            <a
+                href="https://www.youtube.com/@DFAP%C3%B8pJHAY"
+                target="_blank">
+                YouTube
+            </a>
+
+            <a
+                href="https://audiomack.com/popjhay183gmailcom"
+                target="_blank">
+                Audiomack
+            </a>
+
+        </div>
+
+        <p class="private-note">
+            More platforms coming soon.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 DFA Pøp Jhay. All rights reserved.
+        </p>
+
+        <p class="signature">
+            DON'T FADE AWAY.
+        </p>
+
+    </footer>
+
+</body>
+</html>
